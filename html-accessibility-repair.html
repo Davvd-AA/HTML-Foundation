@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Accessibility repair assignment comparing poor HTML markup with semantic accessible HTML and explaining the impact of each repair.">
+    <title>HTML Accessibility Repair Assignment</title>
+</head>
+<body>
+    <header>
+        <h1>HTML Accessibility Repair Assignment</h1>
+        <p>Identifying inaccessible markup and repairing it with native semantic HTML.</p>
+    </header>
+
+    <h2>Original Markup</h2>
+        <div onclick="login()">Login</div>
+        <div class="heading">About Us</div>
+        <img src="team.jpg">
+        <div>
+        Name
+        <input type="text">
+        </div>
+        <a href="/services">Click here</a>
+
+    <main>
+        <h2>Repaired markup</h2>
+        <h3>About Us</h3>
+
+        <button type="button" onclick="login()">Login</button>
+
+        <img src="team.jpg"
+             alt="Our team members are working together">
+
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name">
+        </form>
+
+        <a href="/services">Explore our services</a>
+    </main>
+</body>
+</html>
